@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./30-307525_question-pixel-art.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess My Number!</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <button type="submit" onclick="window.location.reload(true)" class="left">
+        <p>Again!</p>
+      </button>
+      <div class="right">
+        <p>(Between 1 and 20)</p>
+      </div>
+    </div>
+    <div class="t">
+      <h1 id="title">Guess My Number!</h1>
+    </div>
+
+    <div class="box">
+      <button type="button" class="sn">?</button>
+    </div>
+
+    <div class="main">
+      <div class="left">
+        <input type="number" name="input1" class="input1" />
+        <button type="button" onclick="guess()" id="btn">Check!</button>
+      </div>
+
+      <div class="right">
+        <p id="start">Start guessing...</p>
+        <p class="score">💯 Score: <i id="score">5</i></p>
+        <p class="highscore">🏅 Highscore: <i id="highscore"></i></p>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
